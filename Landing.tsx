@@ -343,7 +343,7 @@ export default function App() {
             title="Always secure"
           />
         </View>
-        <View
+        {/* <View
           style={{
             alignSelf: "center",
             alignItems: "center",
@@ -351,7 +351,7 @@ export default function App() {
           }}
         >
           <Text style={styles.explainerTitle}>How to use CueR</Text>
-        </View>
+        </View> */}
       </View>
 
       <View
