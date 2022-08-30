@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>CueR-Home</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/cueR-favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/cueR-favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/cueR-favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/cueR-favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="assets/cueR-favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <style>
+      /* * {
+        outline: 1px solid red;
+        outline-offset: -1px;
+      } */
+      body {
+        background-image: url("assets/Group.svg"), url("assets/dot.svg"),
+          url("assets/dot.svg");
+        background-position: right top, right top 369px, left top 1165px;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+      }
+      @media only screen and (max-width: 600px) {
+        body {
+          background-image: url("assets/dot.svg"), url("assets/dot.svg");
+          background-position: right top 369px, left top 1165px;
+          background-repeat: no-repeat, no-repeat;
+        }
+      }
+    </style>
+    <style>
+      .hiding {
+        opacity: 0;
+        visibility: none;
+      }
+
+      .entering {
+        animation: entrance 1s ease;
+      }
+
+      @keyframes entrance {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="mx-[20px] md:mx-[120px] mt-[30px]">
+      <nav>
+        <div class="flex items-center">
+          <img src="assets/cueR logo icon gradient 8logo.svg" alt="top-logo" />
+          <h1
+            style="
+              background: linear-gradient(
+                91.77deg,
+                #3c80bb 28.4%,
+                #63d0dd 102.23%
+              );
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              background-clip: text;
+            "
+            class="logo text ml-2"
+          >
+            CueR
+          </h1>
+        </div>
+      </nav>
+      <div class="hero mt-[100px]">
+        <p class="text-[#616E88]">Swift. Simple. Secure.</p>
+        <h1
+          class="text-[30px] md:text-[70px] mt-[24px] mr-[140px] font-medium md:mr-[400px] justify-end md:leading-[87.5px]"
+        >
+          Bridging the gap between merchants & customers via contactless
+          payment.
+        </h1>
+      </div>
+    </main>
+    <div class="mx-[30px] md:mx-[7.5rem]">
+      <div class="promo-text mt-[316px] text-center">
+        <h1 class="font-[400] text-[30px] md:text-[40px]">How it works</h1>
+        <p
+          class="font-[300] text-[20px] md:text-[24px] mt-[16px] text-[#616E88]"
+        >
+          It is summarised in 5 simple and convenient steps
+        </p>
+      </div>
+      <div
+        class="flex flex-col md:flex-row flex-wrap gap-10 md:gap-[0px] justify-center pig-cards"
+      >
+        <div class="1 relative p-4">
+          <img src="assets/1/blob1.svg" alt="blob" />
+          <div
+            class="absolute shadow-sm w-[200px] md:h-[303px] md:w-[269px] bg-white rounded-[10px] left-[70px] top-[70px] md:top-[90px] md:left-[100px]"
+          >
+            <h1 class="text-[40px]">01</h1>
+            <h2 class="text-center">Sign up and create wallet</h2>
+            <div class="flex justify-center items-center">
+              <img class="mt-[40px]" src="assets/1/pen.svg" alt="blob" />
+            </div>
+          </div>
+        </div>
+        <div class="2 relative p-4 mt-[40px]">
+          <img src="assets/2/blob2.svg" alt="blob" />
+          <div
+            class="absolute shadow-sm w-[200px] md:h-[303px] md:w-[269px] bg-white rounded-[10px] top-[50px] left-[60px] md:top-[50px] md:left-[100px]"
+          >
+            <h1 class="text-[40px]">02</h1>
+            <h2 class="text-center">Load wallet</h2>
+            <div class="flex justify-center items-center">
+              <img class="mt-[40px]" src="assets/2/wallet.svg" alt="blob" />
+            </div>
+          </div>
+        </div>
+        <div class="3 relative p-4">
+          <img src="assets/3/blob3.svg" alt="blob" />
+          <div
+            class="absolute shadow-sm w-[200px] md:h-[303px] md:w-[269px] bg-white rounded-[10px] left-[70px] top-[70px] md:top-[90px] md:left-[100px]"
+          >
+            <h1 class="text-[40px]">03</h1>
+            <h2 class="text-center">Pay with QR</h2>
+            <div class="flex justify-center items-center">
+              <img class="mt-[40px]" src="assets/3/QR.svg" alt="blob" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col md:flex-row flex-wrap gap-10 justify-center w-full"
+      >
+        <div class="4 relative p-4">
+          <img src="assets/1/blob1.svg" alt="blob" />
+          <div
+            class="absolute w-[200px] shadow-sm md:h-[303px] md:w-[269px] bg-white rounded-[10px] left-[70px] top-[70px] md:top-[90px] md:left-[100px]"
+          >
+            <h1 class="text-[40px]">04</h1>
+            <h2 class="text-center">Instant notification</h2>
+            <div class="flex justify-center items-center">
+              <img class="mt-[40px]" src="assets/4/bell.svg" alt="blob" />
+            </div>
+          </div>
+        </div>
+        <div class="5 relative p-4">
+          <img src="assets/3/blob3.svg" alt="blob" />
+          <div
+            class="absolute w-[200px] shadow-sm md:h-[303px] md:w-[269px] bg-white rounded-[10px] top-[70px] left-[70px] md:top-[90px] md:left-[100px]"
+          >
+            <h1 class="text-[40px]">05</h1>
+            <h2 class="text-center">Transfer to other wallet</h2>
+            <div class="flex justify-center items-center">
+              <img class="mt-[40px]" src="assets/5/pig.svg" alt="blob" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mx-[80px] md:mx-[120px]">
+      <div class="promo-text mt-[100px] text-center">
+        <h1 class="font-[400] text-[30px] md:text-[40px]">Did you know</h1>
+        <p
+          class="font-[300] text-[18px] md:text-[24px] mt-[16px] text-[#616E88] md:mx-[465px]"
+        >
+          CueR is swift, secure, simple to use and is available for everyone’s
+          use?
+        </p>
+      </div>
+      <div
+        class="cards flex gap-10 flex-col md:flex-row justify-between drop-shadow-md mt-[100px] md:mx-[120px]"
+      >
+        <div class="1 md:h-[360px] md:w-[389px] bg-white rounded-[7px]">
+          <div class="flex items-center justify-center mt-[40px]">
+            <img class="item-center" src="assets/icons/bell.svg" alt="bell" />
+          </div>
+          <div class="text-center mt-[40px]">
+            <h1 class="text-[24px]">Very reliable</h1>
+            <p class="text-[16px] mt-[24px] mx-[24px]">
+              CueR is a reliable payment platform that provides instant
+              notifications, prompt reversal of failed transactions and rapid
+              settlements.
+            </p>
+          </div>
+        </div>
+
+        <div class="2 md:h-[360px] md:w-[389px] bg-white rounded-[7px]">
+          <div class="flex items-center justify-center mt-[40px]">
+            <img
+              class="item-center"
+              src="assets/icons/addFriend.svg"
+              alt="bell"
+            />
+          </div>
+          <div class="text-center mt-[40px]">
+            <h1 class="text-[24px]">Easy account creation</h1>
+            <p class="text-[16px] mt-[24px] mx-[24px]">
+              Create your account in 3 easy steps by providing and verifying
+              your phone number, inputing your contact details and creating your
+              login details.
+            </p>
+          </div>
+        </div>
+        <div class="3 md:h-[360px] md:w-[389px] bg-white rounded-[7px]">
+          <div class="flex items-center justify-center mt-[40px]">
+            <img class="item-center" src="assets/icons/secure.svg" alt="bell" />
+          </div>
+          <div class="text-center mt-[40px]">
+            <h1 class="text-[24px]">Always secure</h1>
+            <p class="text-[16px] mt-[24px] mx-[24px]">
+              Our platform is secure using the best industry security standards
+              (as defined by OWASP) to fully protect your details and prevent
+              unwanted access to your history.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rishi mx-[20px]">
+      <div class="ani mt-[60px] md:mt-[200px] w-full">
+        <h1 class="text-center font-medium text-[38px] md:text-[50px]">
+          How to use CueR
+        </h1>
+      </div>
+      <div
+        class="sliding flex md:ml-[153px] justify-between ml-[20px] mt-[20px] md:mt-[121px]"
+      >
+        <div class="left flex mr-[30px] md:mr-[54px]">
+          <div
+            class="line hidden md:block h-[370px] w-[1px] bg-[#D9D9D9] mt-[138px] absolute"
+          >
+            <div
+              class="blue-line h-[90px] w-[3px] bg-[#3878B8] relative top-[0px]"
+              id="blueLine"
+            ></div>
+          </div>
+          <div class="info mt-[20px] md:mt-[121px] ml-[10px] md:ml-[54px]">
+            <div class="1 md:w-[370px]" id="signUp">
+              <h1 class="text-[24px] font-medium cursor-pointer">1. Sign Up</h1>
+              <p class="text-[#616E88] text-[18px] mt-[16px]">
+                Sign up and verify your account in three easy steps.
+              </p>
+            </div>
+            <div class="2 opacity-30 md:w-[370px]" id="loadWallet">
+              <h1 class="text-[24px] font-medium mt-[30px] cursor-pointer">
+                2. Load wallet
+              </h1>
+              <p class="text-[#616E88] mt-[16px] text-[18px]">
+                Load wallet via bank transfer, payment processors such as
+                paystack, flutterwave & others.
+              </p>
+            </div>
+            <div class="3 opacity-30 md:w-[389px]" id="makeNreceive">
+              <h1 class="text-[24px] font-medium mt-[30px] cursor-pointer">
+                3. Make and receive payment
+              </h1>
+              <p class="text-[#616E88] mt-[16px] text-[18px]">
+                Simply can the qr code generated, input amount, input pin and
+                payment is completed.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="right relative hidden md:block">
+          <img src="assets/rishi.svg" alt="backgroundblur" />
+          <div id="test">
+            <img
+              class="absolute top-32 right-[320px]"
+              src="assets/X 1.svg"
+              alt="mobilePhone
+            "
+              id="image1"
+            />
+            <img
+              class="absolute top-32 right-[320px]"
+              src="assets/X 2.svg"
+              alt="mobilePhone
+            "
+              id="image2"
+            />
+            <img
+              class="absolute top-32 right-[320px]"
+              src="assets/X 3.svg"
+              alt="mobilePhone
+            "
+              id="image3"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+
+    <footer>
+      <div
+        class="border-t-[1px] mt-[140px] mb-[48px] border-[#7B7B7B] opacity-30"
+      ></div>
+      <div
+        class="grid grid-cols-1 mx-[70px] md:gap-4 mt-[3.125rem] md:grid-cols-5 md:mx-[7.5rem]"
+      >
+        <div class="1 logo-parent">
+          <div class="logo flex md:justify-start">
+            <img src="assets/cueR logo icon gradient 8logo.svg" />
+          </div>
+        </div>
+        <div class="2 Company md:flex flex-col my-5 md:my-0">
+          <div class="flex mb-5 md:justify-start">
+            <h1 class="font-bold text-2md text-black">Company</h1>
+          </div>
+          <ul class="md:text-left" style="color: #086080">
+            <li class="py-3 text-md hover:text-[#3d82bc]">
+              <a href="#" target="_blank">About us</a>
+            </li>
+            <li class="py-3 text-md hover:text-[#3d82bc]">
+              <a href="form.html" target="_parent">Contact us</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="2 Resources md:text-left md:flex flex-col my-5 md:my-0">
+          <div class="flex mb-5 md:justify-start">
+            <h1 class="font-bold text-2md text-black">Resources</h1>
+          </div>
+          <ul style="color: #086080">
+            <li class="py-3 text-md hover:text-[#3d82bc]">
+              <a href="#" target="_blank">FAQs</a>
+            </li>
+            <li class="py-3 text-md hover:text-[#3d82bc]">
+              <a href="#" target="_blank">Help Centre</a>
+            </li>
+            <li class="py-3 text-md hover:text-[#3d82bc]">
+              <a href="#" target="_blank">Privacy policy</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="2 Company-1 md:text-left md:flex flex-col my-5 md:my-0">
+          <div class="flex mb-5 justify-start">
+            <h1 class="font-bold text-2md text-black">Company</h1>
+          </div>
+          <ul style="color: #086080">
+            <li class="py-3 text-md hover:text-[#3d82bc]">
+              <a href="#" target="_blank">Privacy policy</a>
+            </li>
+            <li class="py-3 text-md hover:text-[#3d82bc]">
+              <a href="#" target="_blank">Terms and conditions</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- ... -->
+        <div class="3 Social md:flex flex-col">
+          <div class="flex md:justify-start mb-6">
+            <p class="font-bold text-2md text-black">Social</p>
+          </div>
+          <div class="socials mb-10 flex md:justify-start">
+            <a href="#">
+              <img src="assets/Frame1.svg" alt="#" />
+            </a>
+            <a href="#">
+              <img class="ml-[16px]" src="assets/Frame2.svg" alt="#" />
+            </a>
+            <a href="#">
+              <img class="ml-[16px]" src="assets/Frame3.svg" alt="#" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <h1
+        class="text-black text-center mb-[1.875rem] text-[1rem] md:text-[1.438rem] md:text-left md:mx-[7.5rem] mt-[52px]"
+      >
+        CueR &#169;2022 All Right reserved
+      </h1>
+    </footer>
+  </body>
+</html>
