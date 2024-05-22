@@ -1,0 +1,28 @@
+.cardsContainer {
+  border-radius: 12px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: rgba(37, 79, 116, 1);
+}
+@media screen and (max-width: 768px) {
+  .cardsContainer {
+    width: 350px;
+  }
+}
+.cardsImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.cardText {
+  padding: 2rem;
+  color: white;
+  font-family: "Raleway-Bold", sans-serif;
+}
+@media screen and (max-width: 400px) {
+  .cardsContainer {
+    width: 280px;
+  }
+}
