@@ -220,11 +220,7 @@ body.modal-open {
   margin: 12px 0;
   color: rgba(102, 114, 122, 1);
 }
-.cuerContainer {
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-}
+
 .cuer_content {
   width: 60%;
   align-self: center;
@@ -1154,7 +1150,8 @@ textArea {
     bottom: 20px !important;
   }
   .cuer_content {
-    width: 410px;
+    padding: 0;
+    width: 320px;
   }
   .elevatingHeader,
   .contact_header {
