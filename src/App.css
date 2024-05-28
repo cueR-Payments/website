@@ -1036,7 +1036,7 @@ textArea {
 
   .cuer_content {
     font-size: 14px;
-    width: 100%;
+    width: 500px;
     text-align: left;
   }
   .qrtechContainer {
@@ -1130,6 +1130,9 @@ textArea {
   .modalContents {
     width: 380px;
   }
+  .cuer_content {
+    width: 480px;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -1145,7 +1148,7 @@ textArea {
   }
   .cuer_content {
     padding: 0;
-    width: 320px;
+    width: 330px;
   }
   .elevatingHeader,
   .contact_header {
