@@ -13,6 +13,7 @@ const Chronicles = ({ setShowModal }: any) => {
           <h1 className="chronicle_head">Dive into Our Company's Chronicle.</h1>
         </motion.div>
       </div>
+      <div className="dive_container" />
       <div className="aboutContainer">
         <motion.div
           whileInView={{ x: 0 }}

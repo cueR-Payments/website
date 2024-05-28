@@ -75,6 +75,7 @@ const HeroSection = () => {
           <div>
             <br />
             <br />
+            <br />
             <motion.div
               animate={{ y: [0, -40, 0] }}
               transition={{ duration: 6, repeat: Infinity }}

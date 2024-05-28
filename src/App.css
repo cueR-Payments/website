@@ -80,7 +80,7 @@ body.modal-open {
 /* Herosection styles */
 .heroSection_container {
   background: url("./images/background.png");
-  background-size: 95%;
+  background-size: 100%;
   /* transform: scale(0.99); */
   justify-content: center;
   align-items: center;
@@ -182,11 +182,11 @@ body.modal-open {
   flex-direction: row;
   align-items: center;
   padding: 3rem;
-  position: absolute;
   transform: translateY(-340px);
+  align-items: center;
+  justify-content: space-between;
   overflow-x: hidden;
   width: 100%;
-  /* justify-content: space-between; */
 }
 .chronicle_head {
   color: rgba(50, 107, 156, 1);
@@ -201,7 +201,7 @@ body.modal-open {
   width: 100%;
 }
 .aboutContainer {
-  transform: translateX(150px);
+  transform: translateX(80px);
   display: flex;
   flex-direction: column;
   justify-content: right;
@@ -226,7 +226,7 @@ body.modal-open {
   justify-content: center;
 }
 .cuer_content {
-  width: 70%;
+  width: 60%;
   align-self: center;
   padding: 0 4rem;
   color: white !important;
@@ -898,7 +898,10 @@ textArea {
   .titleContainer {
     height: 80px;
   }
-
+  .cuer_content {
+    width: 100%;
+    text-align: left;
+  }
   .click_contain {
     display: flex;
     align-items: flex-start;

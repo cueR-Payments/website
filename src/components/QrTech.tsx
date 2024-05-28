@@ -58,8 +58,8 @@ const QrTech = () => {
             <img src={rightRemArrow} alt="rightRem" width={94} height={150} />
           </motion.div>
           <motion.div
-            animate={{ x: [0, -20, 0] }}
-            transition={{ duration: 1, repeat: Infinity }}
+            animate={{ x: [0, -10, 0] }}
+            transition={{ duration: 2, repeat: Infinity }}
           >
             <img
               src={rightArr}
@@ -75,8 +75,8 @@ const QrTech = () => {
         <div className="rightRems">
           <img src={rightRemArrow} alt="rightRem" width={94} height={150} />
 
-          <motion.div
-            animate={{ x: [0, -20, 0] }}
+          {/* <motion.div
+            animate={{ x: [0, -2, 0] }}
             transition={{ duration: 1, repeat: Infinity }}
           >
             <img
@@ -86,7 +86,7 @@ const QrTech = () => {
               width={25}
               height={50}
             />
-          </motion.div>
+          </motion.div> */}
         </div>
         <motion.div
           whileInView={{ rotateX: 0 }}
