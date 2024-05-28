@@ -58,6 +58,9 @@ body {
 .app {
   overflow-x: hidden !important;
 }
+body.modal-open {
+  overflow: hidden;
+}
 /* navigation style */
 .navbar_container {
   padding: 1rem 5.5rem;
@@ -127,6 +130,7 @@ body {
   font-family: "Raleway-Bold", sans-serif;
   letter-spacing: 2px;
 }
+
 .across_content {
   color: rgba(15, 37, 49, 1) !important;
   font-size: 56px;
@@ -212,13 +216,22 @@ body {
   font-size: 16px;
   font-family: "Raleway-Medium";
   line-height: 26px;
-  width: 420px;
+  width: 400px;
   margin: 12px 0;
   color: rgba(102, 114, 122, 1);
 }
-
+.cuerContainer {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
 .cuer_content {
+  width: 70%;
+  align-self: center;
+  padding: 0 4rem;
   color: white !important;
+  margin: 40px 0;
+  line-height: 26px;
 }
 
 .about_us {
@@ -239,6 +252,12 @@ body {
   margin-top: 80px;
   padding: 5rem;
 }
+.cuer_header_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .cuer_header {
   color: white;
   font-family: "Raleway-Bold";
@@ -246,10 +265,7 @@ body {
   margin: 50px 0;
   font-weight: 700;
 }
-.cuer_content {
-  margin: 40px 0;
-  line-height: 26px;
-}
+
 .card_container {
   display: flex;
   flex-direction: row;
@@ -264,8 +280,12 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 10px;
+  /* gap: 10px; */
+  width: 100%;
   padding: 6rem;
+}
+.rightRems {
+  display: none;
 }
 .qrLeftContain {
   display: flex;
@@ -294,10 +314,21 @@ body {
 .bothcontent {
   visibility: hidden;
 }
+
 .left-qr-content,
 .center-qr-content,
 .right-qr-content {
   width: 100%;
+}
+.center-qr-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  gap: 20px;
+}
+.rightButts {
+  margin-top: 110px;
 }
 /* .left-qr-content {
   transform: translateY(-100px);
@@ -346,16 +377,19 @@ body {
 
 /* Elevation */
 .elevatingExperience {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
-  gap: 40px;
-  align-items: center;
+  align-content: center;
+  /* gap: 20px; */
+  /* width: 100%; */
+  /* align-items: center; */
 }
 .elevatingContent {
   padding: 2rem;
-  width: 320px;
-  height: 170px;
+  /* width: 90%; */
+  transform: scale(0.8);
+  height: 160px;
   border-radius: 20px;
   box-shadow: 0px 10px 18px 0px rgba(9, 30, 66, 0.08);
 }
@@ -381,6 +415,7 @@ body {
 }
 .elevatingText {
   font-size: 16px;
+  width: 100%;
   margin: 10px 30px;
 }
 
@@ -453,7 +488,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 .contact_header {
   padding: 1rem;
@@ -466,7 +501,6 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 .inputContainer1 {
   padding: 0.8rem 4.5rem;
@@ -562,6 +596,12 @@ textArea {
   color: rgba(255, 255, 255, 0.7);
   padding: 1rem 0;
 }
+.footer_texts:hover,
+.footerLink:hover {
+  opacity: 0.3;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
 .bottomFooter {
   display: flex;
   flex-direction: row;
@@ -618,6 +658,51 @@ textArea {
   transform: scale(1.1);
 }
 
+/* Modal Styling */
+.backdropBackground {
+  position: fixed;
+  top: 0;
+  overflow-y: hidden;
+  left: 0;
+  overflow-y: hidden !important;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 9999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalContents {
+  background: white;
+  border-radius: 20px;
+  display: flex;
+  overflow-y: scroll;
+  flex-direction: column;
+  width: 800px;
+  line-height: 24px;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+  font-family: "Raleway-Medium";
+}
+
+.modalButton {
+  border: none;
+  background: rgba(15, 37, 49, 1);
+  border-radius: 8px;
+  color: white;
+  padding: 20px 80px;
+  cursor: pointer;
+}
+.modalButton:hover {
+  opacity: 0.8;
+  transition: all 0.8s ease-in-out;
+}
 @media screen and (max-width: 1200px) {
   .chronicle_head,
   .contact_header,
@@ -631,6 +716,9 @@ textArea {
   .iphoneImage {
     width: 300px;
     height: 600px;
+  }
+  .rightRem {
+    display: none;
   }
   .chroniclesBottomImage {
     bottom: 40px !important;
@@ -658,7 +746,7 @@ textArea {
   .right-qr-content {
     padding: 3rem;
     border-radius: 20px;
-    box-shadow: 0px 10px 18px 0px rgba(9, 30, 66, 0.08);
+    /* box-shadow: 0px 10px 18px 0px rgba(9, 30, 66, 0.08); */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -698,6 +786,9 @@ textArea {
   }
   .contact_header {
     font-size: 40px;
+  }
+  .rightRem {
+    display: none;
   }
   .across_content {
     font-size: 40px;
@@ -747,9 +838,10 @@ textArea {
   }
   .elevatingExperience {
     display: grid;
-    place-items: center;
+    width: 100%;
     grid-template-columns: repeat(1, 1fr);
   }
+
   .frequentContainer {
     display: flex;
     flex-direction: column;
@@ -794,6 +886,10 @@ textArea {
     background-size: cover;
     transform: scale(0.95);
   }
+  .modalContents {
+    width: 540px;
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 768px) {
   .card_container {
@@ -802,9 +898,7 @@ textArea {
   .titleContainer {
     height: 80px;
   }
-  .rightRem {
-    display: none;
-  }
+
   .click_contain {
     display: flex;
     align-items: flex-start;
@@ -830,9 +924,7 @@ textArea {
     justify-content: center;
     align-items: center;
   }
-  .center-qr-content {
-    margin-top: 40px;
-  }
+
   .customer,
   .merchant {
     font-size: 16px;
@@ -857,6 +949,13 @@ textArea {
     padding: 2rem;
   }
 }
+@media screen and (max-width: 550px) {
+  .modalContents {
+    width: 420px;
+    padding: 2rem;
+    font-size: 11px;
+  }
+}
 @media screen and (max-width: 540px) {
   .middle_content {
     padding: 2rem;
@@ -866,6 +965,9 @@ textArea {
     margin: 0;
     font-size: 16px;
     align-items: center;
+  }
+  .modalButton {
+    padding: 1rem 60px;
   }
   .accordionContainer {
     gap: 0px;
@@ -937,9 +1039,11 @@ textArea {
     padding: 0rem;
     text-align: left;
   }
+
   .cuer_content {
     font-size: 16px;
-    padding: 3rem;
+    padding: 1rem;
+    width: 100%;
     text-align: left;
   }
   .qrtechContainer {
@@ -1019,12 +1123,19 @@ textArea {
     padding: 0;
     margin: 12px 0px;
   }
+
   .rightBottomFooter {
     margin-top: 20px;
     flex-direction: column;
     text-align: left;
     align-items: flex-start;
     justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .modalContents {
+    width: 380px;
   }
 }
 
@@ -1039,6 +1150,9 @@ textArea {
     right: 10px;
     bottom: 20px !important;
   }
+  .cuer_content {
+    width: 410px;
+  }
   .elevatingHeader,
   .contact_header {
     font-size: 32px;
@@ -1049,8 +1163,11 @@ textArea {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 395px) {
   .frequentContainer {
     padding: 0rem;
+  }
+  .modalContents {
+    width: 350px;
   }
 }

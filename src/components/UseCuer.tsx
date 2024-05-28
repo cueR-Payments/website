@@ -60,6 +60,7 @@ const UseCuer = () => {
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 50 }}
           transition={{ duration: 1 }}
+          className="cuer_header_container"
         >
           <p className="cuer_content">
             Use CueR for fast and secure transactions, simplifying your

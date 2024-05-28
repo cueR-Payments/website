@@ -45,7 +45,7 @@ const ContactUs = () => {
             placeholder="Your message goes here"
             className="textArea"
             style={{
-              maxHeight: "120px",
+              height: "120px",
               width: "100%",
               resize: "none",
             }}

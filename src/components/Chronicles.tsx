@@ -1,8 +1,7 @@
-import React from "react";
 import { rightChevArrow } from "../images";
 import { motion } from "framer-motion";
 
-const Chronicles = () => {
+const Chronicles = ({ setShowModal }: any) => {
   return (
     <div className="chroniclesContainer" id="chronicles">
       <div className="dive_container">
@@ -29,6 +28,7 @@ const Chronicles = () => {
           </p>
           <div className="learnMore">
             <div
+              onClick={() => setShowModal(true)}
               style={{
                 display: "flex",
                 background: "rgba(0,0,0,0.02)",

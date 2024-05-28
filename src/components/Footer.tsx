@@ -119,19 +119,39 @@ const Footer = () => {
           <p className="footer_texts">support@cuertech.com</p>
           <p className="footerRights">Social Media</p>
           <div className="footer_images">
-            <a href="https://" target="_blank" rel="noreferrer">
+            <a
+              href="https://"
+              target="_blank"
+              rel="noreferrer"
+              className="footerLinks"
+            >
               <img src={linkedin} alt="linkedIn" width={40} height={40} />
             </a>
             &nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://" target="_blank" rel="noreferrer">
+            <a
+              href="https://"
+              target="_blank"
+              rel="noreferrer"
+              className="footerLinks"
+            >
               <img src={twitter} alt="twitter" width={40} height={40} />
             </a>
             &nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://" target="_blank" rel="noreferrer">
+            <a
+              href="https://"
+              target="_blank"
+              rel="noreferrer"
+              className="footerLinks"
+            >
               <img src={instagram} alt="instagram" width={40} height={40} />
             </a>
             &nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="https://" target="_blank" rel="noreferrer">
+            <a
+              href="https://"
+              target="_blank"
+              rel="noreferrer"
+              className="footerLinks"
+            >
               <img src={facebook} alt="facebook" width={40} height={40} />
             </a>
           </div>
@@ -141,8 +161,22 @@ const Footer = () => {
         <p className="footer_texts">&copy; 2024 CueR Limited</p>
         <div className="rightBottomFooter">
           <p className="footer_texts">Cookies Preference</p>
-          <p className="footer_texts">Privacy</p>
-          <p className="footer_texts">Terms of Use</p>
+          <a
+            href="https://"
+            target="_blank"
+            rel="noreferrer"
+            className="footerLinks"
+          >
+            <p className="footer_texts">Privacy</p>
+          </a>
+          <a
+            href="https://"
+            target="_blank"
+            rel="noreferrer"
+            className="footerLinks"
+          >
+            <p className="footer_texts">Terms of Use</p>
+          </a>
         </div>
       </div>
     </div>
