@@ -249,6 +249,14 @@ body.modal-open {
   padding: 5rem;
 }
 
+.cuer_header_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
 .cuer_header {
   color: white;
   font-family: "Raleway-Bold";
