@@ -190,7 +190,7 @@ body.modal-open {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 3rem;
+  padding: 8rem 3rem;
   /* transform: translateY(-340px); */
   margin-top: -340px;
   align-items: center;
@@ -736,6 +736,7 @@ textArea {
   }
   .chroniclesContainer {
     position: relative;
+    padding: 5rem 3rem;
     margin-top: 0;
     transform: translateY(0);
   }
