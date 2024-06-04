@@ -587,7 +587,6 @@ textArea {
   text-align: left;
 }
 
-.footer_con,
 .companyContainer {
   width: 100%;
   padding: 2.5rem;
@@ -596,10 +595,13 @@ textArea {
   flex-direction: column;
   justify-content: center;
 }
+.footer_con,
 .companyContainer2 {
+  padding: 2.2rem;
+  justify-content: flex-start;
   width: 100%;
-  margin-top: 85px;
 }
+
 .footer_texts {
   color: rgba(255, 255, 255, 0.7);
   padding: 1rem 0;
