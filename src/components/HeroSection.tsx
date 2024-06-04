@@ -118,6 +118,7 @@ const HeroSection = () => {
                 <img
                   src={bottomArrow}
                   alt="bottomArrow"
+                  className="bottomArrowFloat"
                   height={40}
                   width={40}
                 />

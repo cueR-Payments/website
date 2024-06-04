@@ -182,7 +182,8 @@ body.modal-open {
   flex-direction: row;
   align-items: center;
   padding: 3rem;
-  transform: translateY(-340px);
+  /* transform: translateY(-340px); */
+  margin-top: -340px;
   align-items: center;
   justify-content: space-between;
   overflow-x: hidden;
@@ -245,7 +246,6 @@ body.modal-open {
   align-items: center;
   text-align: center;
   justify-content: center;
-  margin-top: 80px;
   padding: 5rem;
 }
 
@@ -281,7 +281,7 @@ body.modal-open {
   align-items: center;
   /* gap: 10px; */
   width: 100%;
-  padding: 6rem;
+  padding: 2rem 6rem;
 }
 .rightRems {
   display: none;
@@ -709,6 +709,68 @@ textArea {
   .hero_header {
     font-size: 40px;
   }
+  .heroSection_container {
+    background-size: cover;
+  }
+  .iphoneImage {
+    width: 300px;
+    height: 600px;
+  }
+  .rightRem {
+    display: none;
+  }
+  .chroniclesBottomImage {
+    bottom: 40px !important;
+    z-index: 90999;
+  }
+  .chroniclesContainer {
+    position: relative;
+    margin-top: 0;
+    transform: translateY(0);
+  }
+
+  .aboutContainer {
+    transform: translateX(0);
+    padding-right: 0rem;
+  }
+  .qrtechContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    margin-top: 100px;
+    place-items: center;
+  }
+  .left-qr-content {
+    transform: translateY(0px);
+  }
+  .right-qr-content {
+    padding: 3rem;
+    border-radius: 20px;
+    /* box-shadow: 0px 10px 18px 0px rgba(9, 30, 66, 0.08); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .bothcontent {
+    display: none;
+  }
+
+  .card_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .left_image {
+    left: -7%;
+  }
+  .right_image {
+    right: 0%;
+  }
+  .blurry_image {
+    bottom: 20%;
+    right: 4%;
+  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -725,6 +787,7 @@ textArea {
   }
   .chroniclesContainer {
     position: relative;
+    margin-top: 0;
     transform: translateY(0);
   }
 
@@ -777,6 +840,9 @@ textArea {
   .hero_header {
     font-size: 40px;
   }
+  .bottomArrowFloat {
+    display: none;
+  }
   .heroSection_container {
     margin-top: 120px;
   }
@@ -805,11 +871,15 @@ textArea {
   .iphoneImage {
     margin-top: 100px;
   }
+  .cuer_content {
+    width: 100%;
+  }
   .chroniclesContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 3rem 6rem;
   }
   .chronicle_head {
     width: 100%;
@@ -963,7 +1033,7 @@ textArea {
     padding: 2rem;
     width: 100%;
     line-height: 24px;
-    text-align: left;
+    text-align: center;
     margin: 0;
     font-size: 16px;
     align-items: center;
@@ -978,6 +1048,9 @@ textArea {
   .topTitle {
     font-size: 16px;
     color: rgba(102, 114, 122, 1);
+  }
+  .chroniclesContainer {
+    padding: 3rem;
   }
   .customer,
   .merchant {
@@ -1050,6 +1123,9 @@ textArea {
   .qrtechContainer {
     padding: 1.6rem;
     margin: 0;
+  }
+  .store-container {
+    padding: 0 2rem;
   }
   .right-qr-content {
     padding: 0rem;
