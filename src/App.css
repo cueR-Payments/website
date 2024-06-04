@@ -345,6 +345,7 @@ body.modal-open {
   display: flex;
   float: right;
   margin-right: 50px;
+  transform: translateX(-30px);
   margin-top: 20px;
 }
 .rightButt {

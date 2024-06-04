@@ -53,13 +53,15 @@ const QrTech = () => {
             </a>
           </motion.div>
         </div>
-        <div className="rightRem">
+        <div
+          className="rightRem"
+        >
           <motion.div>
             <img src={rightRemArrow} alt="rightRem" width={94} height={150} />
           </motion.div>
           <motion.div
-            animate={{ x: [0, -10, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
+            animate={{ x: [0, -20, 0] }}
+            transition={{ duration: 1, repeat: Infinity }}
           >
             <img
               src={rightArr}
