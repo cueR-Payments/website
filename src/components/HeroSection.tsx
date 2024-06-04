@@ -5,6 +5,8 @@ import {
   googleStore,
   iphoneImgTwo,
   jblspeaker,
+  topCurve,
+  topCurve2,
   transactionSuccess,
 } from "../images";
 import { motion } from "framer-motion";
@@ -44,7 +46,18 @@ const HeroSection = () => {
               initial={{ y: 20 }}
               animate={{ y: 0 }}
               transition={{ duration: 1 }}
+              style={{
+                display: "flex",
+                flexDirection: "row",
+              }}
             >
+              <div className="topCurve">
+                <img src={topCurve} alt="topCurve" height={200} width={200} />
+              </div>
+              <div className="topCurve2">
+                <img src={topCurve2} alt="topCurve" height={200} width={200} />
+              </div>
+
               <a href="https://" target="_blank" rel="noreferrer">
                 <img
                   className="appStore"
@@ -133,6 +146,7 @@ const HeroSection = () => {
                 src={iphoneImgTwo}
                 height={747}
                 width={362}
+                id="iphoneImage"
                 className="iphoneImage"
                 alt="iphoneImg"
               />

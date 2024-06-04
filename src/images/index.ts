@@ -7,6 +7,8 @@ export { default as cuerLogoWhite } from "./cuerLogo_white.png";
 export { default as doubleRight } from "./doubleRight.png";
 export { default as ecllipse } from "./ecllipse.png";
 export { default as facebook } from "./facebook.png";
+export { default as topCurve } from "./topCurve.png";
+export { default as topCurve2 } from "./topCurve2.png";
 export { default as frequentlyAsked } from "./frequently_asked.png";
 export { default as clipboard } from "./clipboard.png";
 export { default as chart } from "./chart.png";

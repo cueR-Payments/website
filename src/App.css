@@ -106,6 +106,15 @@ body.modal-open {
   z-index: 9999 !important;
 }
 
+.topCurve {
+  position: absolute;
+  margin-left: -180px;
+}
+.topCurve2 {
+  position: absolute;
+  display: none;
+}
+
 .leftImage {
   position: absolute;
   left: -380px;
@@ -840,6 +849,17 @@ textArea {
   .hero_header {
     font-size: 40px;
   }
+  #iphoneImage {
+    margin-top: -20px;
+  }
+  .topCurve {
+    margin-left: -180px;
+    margin-top: -100px;
+  }
+  .topCurve img {
+    height: 300px;
+    width: 350px;
+  }
   .bottomArrowFloat {
     display: none;
   }
@@ -1038,6 +1058,18 @@ textArea {
     font-size: 16px;
     align-items: center;
   }
+  .topCurve {
+    display: none;
+  }
+  .topCurve2 {
+    display: flex;
+    margin-top: -50px;
+    margin-left: -80px;
+  }
+  .topCurve2 img {
+    height: 170px;
+    width: 240px;
+  }
   .modalButton {
     padding: 1rem 60px;
   }
@@ -1223,6 +1255,14 @@ textArea {
   .qrtechContainer {
     padding: 0rem;
   }
+  .topCurve2 {
+    margin-top: -40px;
+    margin-left: -40px;
+  }
+  .topCurve2 img {
+    height: 120px;
+    width: 210px;
+  }
   .head_content {
     width: 350px;
   }
@@ -1247,6 +1287,9 @@ textArea {
 @media screen and (max-width: 395px) {
   .frequentContainer {
     padding: 0rem;
+  }
+  .topCurve2 {
+    transform: scale(0.9);
   }
   .modalContents {
     width: 350px;

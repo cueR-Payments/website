@@ -59,7 +59,9 @@ const Footer = () => {
           </p>
         </div>
         <div className="companyContainer">
-          <p className="footerRights">Company</p>
+          <p className="footerRights" style={{ color: "white" }}>
+            Company
+          </p>
           <Link
             to="chronicles"
             smooth={true}
