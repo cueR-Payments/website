@@ -988,6 +988,18 @@ textArea {
   .card_container {
     grid-template-columns: repeat(1, 1fr);
   }
+  .topCurve {
+    display: none;
+  }
+  .topCurve2 {
+    display: flex;
+    margin-top: -50px;
+    margin-left: -80px;
+  }
+  .topCurve2 img {
+    height: 170px;
+    width: 240px;
+  }
   .titleContainer {
     height: 80px;
   }
@@ -1065,15 +1077,7 @@ textArea {
   .topCurve {
     display: none;
   }
-  .topCurve2 {
-    display: flex;
-    margin-top: -50px;
-    margin-left: -80px;
-  }
-  .topCurve2 img {
-    height: 170px;
-    width: 240px;
-  }
+
   .modalButton {
     padding: 1rem 60px;
   }
@@ -1261,7 +1265,8 @@ textArea {
   }
   .topCurve2 {
     margin-top: -40px;
-    margin-left: -40px;
+    margin-left: -60px;
+    transform: scale(0.7);
   }
   .topCurve2 img {
     height: 120px;
@@ -1293,7 +1298,13 @@ textArea {
     padding: 0rem;
   }
   .topCurve2 {
-    transform: scale(0.9);
+    margin-top: -60px;
+    margin-left: -80px;
+    transform: scale(0.5);
+  }
+  .topCurve2 img {
+    height: 170px;
+    width: 240px;
   }
   .modalContents {
     width: 350px;
