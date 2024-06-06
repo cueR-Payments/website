@@ -1077,6 +1077,11 @@ textArea {
   .topCurve {
     display: none;
   }
+  .topCurve2 {
+    margin-top: -60px;
+    margin-left: -80px;
+    transform: scale(0.6);
+  }
 
   .modalButton {
     padding: 1rem 60px;
