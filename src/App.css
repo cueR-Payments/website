@@ -663,11 +663,6 @@ textArea {
   padding: 1rem;
   cursor: pointer;
 }
-.downloadApp:hover {
-  opacity: 0.5;
-  transition: all ease-in-out 0.3s;
-  transform: scale(1.1);
-}
 
 /* Modal Styling */
 .backdropBackground {

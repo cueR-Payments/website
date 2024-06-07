@@ -48,11 +48,7 @@ const Navbar = () => {
   }, []);
   return (
     <div className="navbar_container" id="navbar">
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 2 }}
-      >
+      <div>
         <img
           className="logo"
           src={isAtFooter ? cuerLogoWhite : cuerLogo}
@@ -60,12 +56,8 @@ const Navbar = () => {
           width={150}
           height={55}
         />
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 2 }}
-      >
+      </div>
+      <div>
         <Link
           to="storeDownload"
           smooth={true}
@@ -80,7 +72,7 @@ const Navbar = () => {
             Download App
           </p>
         </Link>
-      </motion.div>
+      </div>
     </div>
   );
 };
